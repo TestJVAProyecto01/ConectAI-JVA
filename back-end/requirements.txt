@@ -1,0 +1,28 @@
+# Dependencias del Backend - IESTP Juan Velasco Alvarado
+# Instalar con: pip install -r requirements.txt
+
+# Framework web
+flask==3.0.0
+flask-cors==4.0.0
+
+# Google APIs
+google-auth==2.23.4
+google-auth-oauthlib==1.1.0
+google-auth-httplib2==0.1.1
+google-api-python-client==2.108.0
+
+# Google Gemini AI (GRATIS - 15 req/min, 1500/día)
+# Actualizado a última versión para compatibilidad
+google-generativeai>=0.8.0
+
+# Procesamiento de PDFs
+PyPDF2==3.0.1
+
+# Peticiones HTTP (para OpenRouter)
+requests==2.31.0
+
+# Variables de entorno (opcional)
+python-dotenv==1.0.0
+
+beautifulsoup4==4.12.2
+lxml==4.9.3

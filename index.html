@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asistente Virtual - Trámites IESTP Juan Velasco Alvarado</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container"></div>
+
+    <!-- Chatbot Container -->
+    <div class="chatbot-container" id="chatbotContainer">
+      <div class="chatbot-header" id="chatbotHeader">
+        <h3><i class="fas fa-robot"></i> Asistente ConectAI-JVA</h3>
+        <div class="status-indicator"></div>
+        <div class="chatbot-controls">
+          <button id="minimizeChatbot"><i class="fas fa-minus"></i></button>
+          <button id="closeChatbot"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+
+      <div class="chatbot-content">
+        <div class="chatbot-messages" id="chatbotMessages"></div>
+        <div class="chatbot-suggestions" id="chatbotSuggestions">
+          <div class="suggestion-chip" data-message="matrícula">Matrícula</div>
+          <div class="suggestion-chip" data-message="traslado">Traslado</div>
+          <div class="suggestion-chip" data-message="reserva">
+            Reserva de matrícula
+          </div>
+          <div class="suggestion-chip" data-message="reincorporación">
+            Reincorporación
+          </div>
+          <div class="suggestion-chip" data-message="cambio de turno">
+            Cambio de turno
+          </div>
+          <div class="suggestion-chip" data-message="titulación">
+            Titulación
+          </div>
+        </div>
+        <div class="chatbot-input-container">
+          <input
+            type="text"
+            class="chatbot-input"
+            id="chatbotInput"
+            placeholder="Escribe tu consulta..."
+          />
+          <button class="chatbot-send" id="chatbotSend">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="new-message-badge" id="newMessageBadge" style="display: none">
+        0
+      </div>
+    </div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification">
+      <i class="fas fa-info-circle"></i>
+      <div class="notification-content">
+        <div class="notification-title" id="notificationTitle">Título</div>
+        <div class="notification-message" id="notificationMessage">Mensaje</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
